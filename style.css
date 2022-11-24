@@ -77,7 +77,7 @@ header {
 }
 
 .info-container {
-    color: blue;
+    opacity: .8;
     display: flex;
     align-items: stretch;
     gap: 10px 30px;
@@ -89,8 +89,12 @@ header {
 }
 
 
-.info {
 
+
+.info {
+    opacity: 1;
+    color: white;
+    background-color: #000;
     outline-style: solid;
     outline-color: black;
 }
