@@ -15,7 +15,10 @@ header {
     position: relative;
     opacity: .8;
     justify-content: space-between;
+    align-items: stretch;
+    
 }
+
 
 #References {
     background-color: black;
@@ -24,24 +27,22 @@ header {
     padding-top: 30px;
     font-family: sans-serif;
     color: white;
-    align-self: flex-end;
-    border: 2px;
-    padding: 2px;
-    margin: 12px;
+    align-self: stretch;
 }
 
 #References:hover {
     cursor: pointer;
     color: #000;
     background-color: white;
+    border-color: #000;
+    border-style: solid;
+    border-width: 2px;
 }
 
 
-.title {
+#title {
     font-size: 80px;
     font-weight: 100;
-    margin: 0 0 0 20px;
-    padding-top: 30px;
     font-family: sans-serif;
     color: white;
 }
@@ -67,4 +68,32 @@ header {
     outline-style: solid;
     outline-color: black;
     border-radius: 12px;
+}
+
+
+.hidden {
+    display: none;
+}
+
+
+#modal-backdrop {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+
+#references-modal {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    overflow: scroll;
+
 }
