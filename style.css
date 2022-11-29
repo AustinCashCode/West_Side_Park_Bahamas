@@ -123,6 +123,10 @@ header {
     display: flex;
     justify-content: center;
     flex-flow: column wrap;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-bottom: 4px;
+
 }
 
 
@@ -143,13 +147,22 @@ of the references page */
 
 #close-button {
     border: 2px, solid, black;
-    background-color: #fff;
+    border-radius: 4px;
+    background-color: rgb(250, 244, 244);
     margin: 12px;
     width: 64px;
     height: 36px;
+    
 }
 
 #close-button:hover {
     cursor: pointer;
     background-color: red;
+    border-color: red;
 }
+
+
+.hangingindent {
+    padding-left: 22px ;
+    text-indent: -22px ;
+    } 
